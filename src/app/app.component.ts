@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
   selector: 'app-root',
   imports: [LoginComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'sprint';

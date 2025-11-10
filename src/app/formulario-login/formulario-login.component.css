@@ -1,0 +1,66 @@
+.form-container {
+    display: flex; 
+    width: 100%;
+    padding: 0 5%;
+}
+
+.form-input {
+    width: 95%;
+}
+
+.form-input label {
+    width: 100%;
+    text-align: center;
+    margin-right: 33px;
+}
+
+#autoLoginSwitch {
+    transform: scale(1.5);
+    margin-right: 2%;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+.color-person {
+    color: green;
+    background-color: white;
+}
+
+.btn-olho {
+    background-color: white;
+    border-left: none;
+    border-color: #dee2e6;
+}
+
+.btn-olho:hover {
+    background-color: white;
+    border-left: none;
+    border-color: #dee2e6;
+    color: black;
+}    
+
+.btn-entrar {
+    width: 100%;
+    background-color: #adb5bd;
+    border-color: #adb5bd;
+    color: white;
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+
+.info {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    color: green;
+}
+
+.btn-entrar:hover {
+    background-color: blue;
+    border-color: blue;
+}

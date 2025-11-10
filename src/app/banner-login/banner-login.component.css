@@ -1,0 +1,6 @@
+.section__banner {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    opacity: 0.5;
+}

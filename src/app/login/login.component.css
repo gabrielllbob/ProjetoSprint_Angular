@@ -1,103 +1,17 @@
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-    margin: auto 0;
 }
 
 .section__login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto 0;
-}
-
-.section__login__banner {
-    width: 50%;
-    margin: auto 0;
+    background-color: whitesmoke;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 13%;
 }
 
-.section__login__banner__img {
-    width: 100%;
-    opacity: 0.5;
-}
-
-.section__login__formulario {
-    width: 50%;
-    margin: auto 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section__login__formulario h3 {
+.section__login h3 {
     color: green;
-    margin: 30px 0;
-}
-
-.form-container {
-    display: flex; 
-    width: 100%;
-}
-
-.form-input {
-    width: 85%;
-}
-
-.form-input label {
-    width: 100%;
-    text-align: center;
-    margin-right: 33px;
-}
-
-#autoLoginSwitch {
-    transform: scale(1.5);
-    margin-right: 2%;
-}
-
-.form-switch .form-check-input:checked {
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
-}
-
-.section__login__formulario__form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.color-person {
-    color: green;
-}
-
-.btn-entrar {
-    width: 100%;
-    background-color: #adb5bd;
-    border-color: #adb5bd;
-    color: white;
-    padding: 3px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0.3rem;
-}
-
-.info {
-    position: relative;
-    top: 2px;
-    left: 2px;
-}
-
-.btn-entrar:hover {
-    background-color: blue;
-    border-color: blue;
 }

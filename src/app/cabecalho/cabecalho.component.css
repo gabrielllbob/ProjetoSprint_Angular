@@ -1,0 +1,11 @@
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho__section__direita {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+}
