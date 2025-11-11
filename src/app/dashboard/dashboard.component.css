@@ -1,0 +1,70 @@
+.titulo-dashboard {
+    text-align: center;
+    color: royalblue;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 85vh;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.section__tabela-veiculos {
+    background-color: blue;
+    height: 30vh;
+}
+
+.tabela-veiculos {
+    background-color: blue;
+}
+
+.tabela-veiculos-titulo {
+    background-color: blue;
+    color: white;
+}
+
+.tabela-veiculos-dados {
+    background-color: white;
+}
+
+.quadro-titulo {
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
+.quadro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 3%;
+    height: 70%;
+}
+
+.quadro-info h2 {
+    padding-left: 7%;
+    font-weight: bold;
+    color: royalblue;
+}
+
+.quadro-info h6 {
+    padding-left: 7%;
+    color: gray;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
