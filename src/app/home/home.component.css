@@ -1,0 +1,28 @@
+section {
+    height: 100vh;
+    background-image: url("/img/ranger.png");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro {
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: 1px 1px 0 0 black;
+    background-color: white;
+    opacity: 0.8;
+    height: 66%;
+}
+
+h3 {
+    margin: 3%;
+    color: dodgerblue;
+}
+
+h4 {
+    margin: 3%;
+}
