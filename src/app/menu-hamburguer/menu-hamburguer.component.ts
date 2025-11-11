@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { AutenticacaoService } from '../services/autenticacao.service';
 
 @Component({
   selector: 'app-menu-hamburguer',
@@ -10,6 +11,14 @@ import { RouterModule } from '@angular/router';
   styleUrl: './menu-hamburguer.component.css'
 })
 export class MenuHamburguerComponent {
+
+  constructor(private authService: AutenticacaoService, private router: Router) { }
+
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['/login']);
+  }
+
   isMenuOpen = false;
 
   toggleMenu(event: MouseEvent) {
@@ -21,7 +30,6 @@ export class MenuHamburguerComponent {
     this.isMenuOpen = false;
   }
 
-  // Fecha o menu ao clicar fora
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: Event) {
     const target = event.target as HTMLElement;

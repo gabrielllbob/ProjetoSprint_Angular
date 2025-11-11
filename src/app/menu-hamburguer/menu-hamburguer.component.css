@@ -17,7 +17,6 @@
   position: fixed !important;
   left: 0;
   top: 0;
-  width: 250px;
   height: 100vh;
   background-color: #f8f9fa;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
@@ -39,7 +38,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0.4);
   z-index: 1500;
@@ -89,3 +87,15 @@ a {
   color: green;
   font-weight: 600;
 }
+
+.deslogar-btn button {
+  background: transparent;
+  border: none;
+}
+
+.deslogar-btn {
+  display: flex;
+  justify-content: right;
+  padding-right: 1%;
+}
+

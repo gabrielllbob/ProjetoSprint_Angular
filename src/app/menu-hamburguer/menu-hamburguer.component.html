@@ -1,5 +1,5 @@
 <nav class="navbar col-md-12 md-12">
-  <div class="container-fluid d-flex justify-content-start position-relative">
+  <div class="container-fluid d-flex justify-content-start position-relative col-md-10 md-10">
 
     <button class="navbar-toggler me-2" type="button" (click)="toggleMenu($event)" aria-label="Abrir menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -13,7 +13,7 @@
       </svg>
     </button>
 
-    <div class="menu-container" [class.active]="isMenuOpen" (click)="$event.stopPropagation()" id="navbarNav">
+    <div class="menu-container col-md-2 md-2" [class.active]="isMenuOpen" (click)="$event.stopPropagation()" id="navbarNav">
       <div class="menu-header">
         <img src="/img/ford.png" alt="Ford Logo" class="menu-logo col-md-6 md-6" (click)="closeMenu()" />
       </div>
@@ -29,6 +29,13 @@
       </ul>
     </div>
 
-    <div class="overlay" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
+    <div class="overlay col-md-12 md-12" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
+  </div>
+  <div class="col-md-2 md-2 deslogar-btn">
+    <button (click)="logout()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
+      </svg>
+    </button>
   </div>
 </nav>
