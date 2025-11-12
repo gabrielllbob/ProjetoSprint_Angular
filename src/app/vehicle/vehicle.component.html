@@ -1,0 +1,45 @@
+<section class="col-md-12 md-12 cards" *ngIf="selectedVehicle">
+    <div class="col-md-12 md-12 titulo-dashboard">
+        <h1>Dashboard FORD</h1>
+    </div>
+    <div class="card quadro col-md-2 md-2">
+        <div class="col-md-12 md-12 quadro-titulo">
+            <h5>Veiculo</h5>
+        </div>
+        <div class="col-md-12 md-12 quadro-info centro">
+            <select class="form-select" #sel (change)="onVehicleSelect(sel.value)">
+                <option *ngFor="let v of vehicles" [value]="v.id">{{ v.vehicle }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="card quadro col-md-2 md-2">
+        <div class="col-md-12 md-12 quadro-titulo">
+            <h5>Total de Vendas</h5>
+        </div>
+        <div class="col-md-12 md-12 quadro-info">
+            <h2>{{ selectedVehicle?.volumetotal }}</h2>
+            <h6>Unid</h6>
+        </div>
+    </div>
+    <div class="card quadro col-md-2 md-2">
+        <div class="col-md-12 md-12 quadro-titulo">
+            <h5>Conectados</h5>
+        </div>
+        <div class="col-md-12 md-12 quadro-info">
+            <h2>{{ selectedVehicle?.connected }}</h2>
+            <h6>Unid</h6>
+        </div>
+    </div>
+    <div class="card quadro col-md-2 md-2">
+        <div class="col-md-12 md-12 quadro-titulo">
+            <h5>Update Software</h5>
+        </div>
+        <div class="col-md-12 md-12 quadro-info">
+            <h2>{{ selectedVehicle?.softwareUpdates }}</h2>
+            <h6>Unid</h6>
+        </div>
+    </div>
+    <div class="banner col-md-12 md-12">
+        <img [src]="selectedVehicle.img" [alt]="selectedVehicle.vehicle">
+    </div>
+</section>

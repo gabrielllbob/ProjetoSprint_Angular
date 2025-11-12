@@ -1,0 +1,22 @@
+.section__tabela-veiculos {
+    background-color: #1b357e;
+    height: 20vh;
+}
+
+.tabela-veiculos {
+    background-color: #1b357e;
+}
+
+.tabela-veiculos-titulo th{
+    background-color: #1b357e;
+    color: white;
+}
+
+.tabela-veiculos-dados {
+    background-color: white;
+}
+
+.msgError {
+    position: absolute;
+    top: 77vh;
+}

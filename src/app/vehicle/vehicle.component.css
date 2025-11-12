@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 83vh;
+    height: 80vh;
 }
 
 .banner {
@@ -18,24 +18,6 @@
 
 .banner img {
     width: 50%;
-}
-
-.section__tabela-veiculos {
-    background-color: #1b357e;
-    height: 17vh;
-}
-
-.tabela-veiculos {
-    background-color: #1b357e;
-}
-
-.tabela-veiculos-titulo th{
-    background-color: #1b357e;
-    color: white;
-}
-
-.tabela-veiculos-dados {
-    background-color: white;
 }
 
 .quadro-titulo {

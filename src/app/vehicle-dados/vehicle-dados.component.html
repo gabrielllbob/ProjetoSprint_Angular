@@ -1,0 +1,36 @@
+<section class="col-md-12 md-12 section__tabela-veiculos">
+    <div *ngIf="errorMessage" class="alert alert-danger mt-2 msgError">
+        {{ errorMessage }}
+    </div>
+    <table class="table table-striped table-bordered col-md-12 md-12 tabela-veiculos">
+        <thead>
+            <tr class="tabela-veiculos-titulo">
+                <th class="p-1">Código - Vin</th>
+                <th>Odômetro</th>
+                <th>Nível de Combustível</th>
+                <th>Status</th>
+                <th>Lat.</th>
+                <th>Long.</th>
+            </tr>
+        </thead>
+        <tbody class="tabela-veiculos-dados">
+            <tr class="tabela-veiculos-dados">
+                <td class="col-md-2 md-2 p-1"><input class="form-control" type="text" [(ngModel)]="vin" (keyup)="onSerchVin()" name="Cod-Vin" id="Cod-Vin"/></td>
+                <ng-container *ngIf="vehicleData">
+                    <td>{{ vehicleData.odometro }} Km</td>
+                    <td>{{ vehicleData.nivelCombustivel }} %</td>
+                    <td [ngClass]="{'text-success': vehicleData.status === 'on', 'text-danger': vehicleData.status === 'off'}">
+                        {{ vehicleData.status }}
+                    </td>
+                    <td>{{ vehicleData.lat }}</td>
+                    <td>{{ vehicleData.long }}</td>
+                </ng-container>
+                <ng-container *ngIf="!vehicleData && !errorMessage">
+                    <td colspan="5" class="text-center text-muted">
+                        Nenhum veículo consultado ainda.
+                    </td>
+                </ng-container>
+            </tr>
+        </tbody>
+    </table>
+</section>
