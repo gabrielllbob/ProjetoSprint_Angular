@@ -15,7 +15,7 @@
         </thead>
         <tbody class="tabela-veiculos-dados">
             <tr class="tabela-veiculos-dados">
-                <td class="col-md-2 md-2 p-1"><input class="form-control" type="text" [(ngModel)]="vin" (keyup)="onSerchVin()" name="Cod-Vin" id="Cod-Vin"/></td>
+                <td class="col-md-2 md-2 p-1"><input class="form-control" type="text" [(ngModel)]="vin" (keyup)="onKeyUp()" name="Cod-Vin" id="Cod-Vin"/></td>
                 <ng-container *ngIf="vehicleData">
                     <td>{{ vehicleData.odometro }} Km</td>
                     <td>{{ vehicleData.nivelCombustivel }} %</td>
